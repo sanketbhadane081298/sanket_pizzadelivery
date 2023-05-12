@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Restaurent</title>
+     <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   
+      <script>
+   $(document).ready(function() {
+      $('form[name="orderForm"]').submit(function(event) {
+         var name = $('input[name="name"]').val();
+         var number = $('input[name="number"]').val();
+         var flat = $('input[name="flat"]').val();
+         var street = $('input[name="street"]').val();
+         var pin_code = $('input[name="pin_code"]').val();
+
+         if (name == "") {
+            alert("Name must be filled out");
+            event.preventDefault();
+         }
+
+         if (number == "") {
+            alert("Number must be filled out");
+            event.preventDefault();
+         }
+
+         if (flat == "") {
+            alert("Address line 01 must be filled out");
+            event.preventDefault();
+         }
+
+         if (street == "") {
+            alert("Address line 02 must be filled out");
+            event.preventDefault();
+         }
+
+         if (pin_code == "") {
+            alert("Pin code must be filled out");
+            event.preventDefault();
+         }
+      });
+   });
+</script>
+</head>
+<body>
+    
+<!-- order section starts-->
+<section class="order" id="order">
+    <h1 class="heading">order now</h1>
+    <form name="orderForm" action="" method="post">
+      <div class="display-orders">
+         <p>pizza-1 <span>( $3/- x 2 )</span></p>
+         <p>pizza 03 <span>( $2/- x 1 )</span></p>
+         <p>pizza 06 <span>( $4/- x 4 )</span></p>
+         <p>pizza 07 <span>( $2/- x 1 )</span></p>
+      </div>
+      <div class="flex">
+         <div class="inputBox">
+            <span>your name :</span>
+            <input type="text" name="name" class="box" required placeholder="enter your name" maxlength="20">
+         </div>
+         <div class="inputBox">
+            <span>your number :</span>
+            <input type="number" name="number" class="box" required placeholder="enter your number" min="0">
+         </div>
+         <div class="inputBox">
+            <span>payment method</span>
+            <select name="method" class="box">
+               <option value="cash on delivery">cash on delivery</option>
+               <option value="credit card">credit card</option>
+               <option value="paytm">paytm</option>
+               <option value="paypal">paypal</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>address line 01 :</span>
+            <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>address line 02 :</span>
+            <input type="text" name="street" class="box" required placeholder="e.g. street name." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>pin code :</span>
+            <input type="number" name="pin_code" class="box" required placeholder="e.g. 123456" min="0">
+         </div>
+      </div>
+   
+      <input type="submit" value="order now" class="btn" name="order">
+   </form>
+ </section>
+ 
+ <!-- order section ends -->
+ <script src="js/script.js"></script>
+
+
+
+</body>
+</html>

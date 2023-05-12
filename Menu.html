@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Restaurent</title>
+     <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- menu section starts  -->
+<section id="menu" class="menu">
+    <h1 class="heading">Our Menu</h1>
+    <div class="box-container">
+       <div class="box">
+          <div class="price">$ <span>2</span>/-</div>
+          <img src="images/pizza-1.jpg" alt="pizza-1">
+          <div class="name">pizza 1</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add to cart" class="btn">
+          </form>
+       </div>
+       <div class="box">
+          <div class="price">$<span>4</span>/-</div>
+          <img src="images/pizza-2.jpg" alt="pizza-2">
+          <div class="name"> pizza-2</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add to cart" class="btn">
+          </form>
+       </div>
+       <div class="box">
+          <div class="price">$<span>2</span>/-</div>
+          <img src="images/pizza-3.jpg" alt="">
+          <div class="name">pizza 3</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>3</span>/-</div>
+          <img src="images/pizza-4.jpg" alt="">
+          <div class="name">pizza 4</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>2</span>/-</div>
+          <img src="images/pizza-5.jpg" alt="">
+          <div class="name">pizza 5</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>4</span>/-</div>
+          <img src="images/pizza-6.jpg" alt="">
+          <div class="name">pizza 6</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>2</span>/-</div>
+          <img src="images/pizza-7.jpg" alt="">
+          <div class="name">pizza 7</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>3</span>/-</div>
+          <img src="images/pizza-8.jpg" alt="">
+          <div class="name">pizza 8</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>4</span>/-</div>
+          <img src="images/pizza-9.jpg" alt="">
+          <div class="name">pizza 9</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn" id="add-to-cart">
+             <div id="popup">
+               <div class="popup-content">
+                 <h3>Product added successfully!</h3>
+                 <button id="close-popup">Close</button>
+               </div>
+             </div>
+          </form>
+       </div>
+    </div>
+ </section>
+ <!-- menu section ends -->
+ <script src="js/script.js"></script>
+ <script src="Library/jquery-3.6.4.min.js"></script>
+<script src="Library/addtocart.js"></script>
+</body>
+</html>
