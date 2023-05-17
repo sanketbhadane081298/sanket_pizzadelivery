@@ -13,67 +13,314 @@
 
 </head>
 <body>
+   <header class="header">
+
+      <section class="flex">
+   
+         <a href="#home" class="logo">Pizza.</a>
+   
+         <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="Faq.html">Faq</a>
+         </nav>
+   
+         <div class="icons">
+            
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="order-btn" class="fas fa-box"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+         </div>
+   
+      </section>
+   
+   </header>
+   
+   <!-- header section ends -->
+   <div class="user-account">
+   
+      <section>
+   
+         <div id="close-account"><span>close</span></div>
+   
+         <div class="user">
+            <p><span>you are not logged in now!</span></p>
+         </div>
+   
+         <div class="display-orders">
+            <p>pizza-1 <span>( $3/- x 2 )</span></p>
+            <p>pizza 03 <span>( $2/- x 1 )</span></p>
+            <p>pizza 06 <span>( $4/- x 4 )</span></p>
+            <p>pizza 07 <span>( $2/- x 1 )</span></p>
+         </div>
+   
+         <div class="flex">
+   
+            <form action="" method="post">
+               <h3>login now</h3>
+               <table>
+                  <tr >
+               <input type="email" name="email" id="mailId" required class="box" placeholder="enter your email" maxlength="50">
+              </tr>
+              <tr><td></td><td class="error" id="error2"></td></tr>
+               <tr><input type="password" name="pass" id="pass" pattern="^[A-Za-z0-9]{4,8}$" required class="box" placeholder="enter your password" maxlength="20"></tr>
+               <tr><td></td><td class="error" id="error3"></td></tr>
+            </table>
+               <input type="submit" value="login now" name="login" class="btn">
+            </form>
+   
+            <form action="" method="post" id="regForm"  novalidate>
+               
+               <h3>register now</h3>
+               <table>
+             <tr>
+               <td><input type="text" id="firstName"  pattern="^[A-Za-z]*$"  name="name" required class="box" placeholder="enter your name" ></td>   
+               
+            </tr>
+           <tr><td class="error" id="error1"></td></tr>
+               <tr>
+                   <td><input type="email" name="email" id="mailId" required class="box" placeholder="enter your email" maxlength="50"></td> 
+               
+            </tr>
+            <tr><td class="error" id="error2"></td></tr>
+               <tr>
+                  <td> <input type="text" name="pass" id="pass" pattern="^[A-Za-z0-9]{4,8}$" required class="box" placeholder="enter your password"></td> 
+             
+            </tr>
+            <tr> <td class="error" id="error3"></td></tr>
+               <tr> 
+                  <td><input type="password" name="cpass" id="cpass" required class="box" placeholder="confirm your password" > </td> 
+              </tr>
+               <tr> <td class="error" id="error4"></td></tr>
+               
+                      
+            </table>
+            <input type="submit" value="register now" name="register" class="btn">
+     
+            </form>
+   
+   
+         </div>
+   
+      </section>
+   
+   </div>
+   <div class="shopping-cart">
+   
+      <section>
+   
+         <div id="close-cart"><span>close</span></div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-1.jpg" alt="">
+            <div class="content">
+               <p>pizza-1 <span>( $3/- x 2 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-3.jpg" alt="">
+            <div class="content">
+               <p>pizza-3 <span>( $2/- x 1 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-6.jpg" alt="">
+            <div class="content">
+               <p>pizza-6 <span>( $4/- x 2 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-7.jpg" alt="">
+            <div class="content">
+               <p>pizza-7 <span>( $2/- x 1 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+   
+         <a href="#order" class="btn">order now</a>
+   
+      </section>
+   
+   </div>
+   <div class="my-orders">
+   
+      <section>
+   
+         <div id="close-orders"><span>close</span></div>
+   
+         <h3 class="title"> my orders </h3>
+   
+         <div class="box">
+            <p>placed on : <span>06/04/2022</span> </p>
+            <p>name : <span>shaikh anas</span> </p>
+            <p>number : <span>1234567890</span></p>
+            <p>address : <span>flat no. 123, bulding no. 2, jogeshwari, mumbai, india - 400104</span></p>
+            <p>payment method : <span>cash on delivery</span></p>
+            <p>your orders : <span>pizza 01 $3/- x 2, pizza 03 $2/- x 1, pizza 06 $4/- x 4, pizza 07, $2/- x 1</span></p>
+            <p>total price : <span>$11/-</span></p>
+            <p>payment status : <span style="color: var(--red);">pending</span> </p>
+         </div>
+   
+         <div class="box">
+            <p>placed on : <span>06/04/2022</span> </p>
+            <p>name : <span>shaikh anas</span> </p>
+            <p>number : <span>1234567890</span></p>
+            <p>address : <span>flat no. 123, bulding no. 2, jogeshwari, mumbai, india - 400104</span></p>
+            <p>payment method : <span>cash on delivery</span></p>
+            <p>your orders : <span>pizza 01 $3/- x 2, pizza 03 $2/- x 1, pizza 06 $4/- x 4, pizza 07, $2/- x 1</span></p>
+            <p>total price : <span>$11/-</span></p>
+            <p>payment status : <span style="color: var(--red);">pending</span> </p>
+         </div>
+   
+      </section>
+   
+   </div>
+   
+   <div class="shopping-cart">
+   
+      <section>
+   
+         <div id="close-cart"><span>close</span></div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-1.jpg" alt="">
+            <div class="content">
+               <p>pizza-1 <span>( $3/- x 2 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-3.jpg" alt="">
+            <div class="content">
+               <p>pizza-3 <span>( $2/- x 1 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-6.jpg" alt="">
+            <div class="content">
+               <p>pizza-6 <span>( $4/- x 2 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-7.jpg" alt="">
+            <div class="content">
+               <p>pizza-7 <span>( $2/- x 1 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+   
+         <a href="order.html" class="btn">order now</a>
+   
+      </section>
+   
+   </div>
     <!-- faq section starts  -->
-<section class="faq" id="faq">
-    <h1 class="heading">FAQ</h1>
-    <div class="accordion-container">
- 
-       <div class="accordion active">
-          <div class="accordion-heading">
-             <span>What is your dress code?</span>
-             <i class="fas fa-angle-down"></i>
-          </div>
-          <p class="accrodion-content">
-             Our dress code is casual, but we ask that our guests avoid wearing beachwear or athletic clothing.
-          </p>
-       </div>
-       <div class="accordion">
-          <div class="accordion-heading">
-             <span>What are your hours of operation?</span>
-             <i class="fas fa-angle-down"></i>
-          </div>
-          <p class="accrodion-content">
-             Our pizza delivery service is available from 11:00am to 10:00pm Monday through Saturday, and from 12:00pm to 9:00pm on Sundays.
-          </p>
-       </div>
- 
-       <div class="accordion">
-          <div class="accordion-heading">
-             <span>can I order for huge parties?</span>
-             <i class="fas fa-angle-down"></i>
-          </div>
-          <p class="accrodion-content">
-             Yes, we have a minimum order amount of [dollar amount]. This helps us cover our delivery costs and ensure that we can provide high-quality service to all of our customers.
-          </p>
-       </div>
- 
-       <div class="accordion">
-          <div class="accordion-heading">
-             <span>How long does delivery take?</span>
-             <i class="fas fa-angle-down"></i>
-          </div>
-          <p class="accrodion-content">
-             Our delivery times vary depending on factors such as traffic and demand, but we typically aim to deliver your pizza within 30-45 minutes of placing your order.
-          </p>
-       </div>
- 
- 
-       <div class="accordion">
-          <div class="accordion-heading">
-             <span>is it cooked with oil?</span>
-             <i class="fas fa-angle-down"></i>
-          </div>
-          <p class="accrodion-content">
-             Yes, pizza is typically cooked with oil. When making pizza, oil is often used to grease the baking surface and to add flavor and moisture to the dough and toppings
-          </p>
-       </div>
-          </div>
-       </div>
-    </div>
- </section>  
- <!-- faq section ends -->
- <script src="js/script.js"></script>
- 
+    <section class="faq" id="faq">
+
+      <h1 class="heading">FAQ</h1>
+   
+      <div class="accordion-container">
+   
+         <div class="accordion active">
+            <div class="accordion-heading">
+               <span>how does it work?</span>
+               <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accrodion-content">
+               The pizza delivery website allows customers to place their pizza orders online. Users can browse through the menu, select their desired pizza flavors and sizes, customize toppings, and add items to their cart. 
+            </p>
+         </div>
+   
+         <div class="accordion">
+            <div class="accordion-heading">
+               <span>how long does it take for delivery?</span>
+               <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accrodion-content">
+               The delivery time for pizzas can vary depending on several factors such as the restaurant's location, current demand, traffic conditions, and the distance between the restaurant and the delivery address.
+            </p>
+         </div>
+   
+         <div class="accordion">
+            <div class="accordion-heading">
+               <span>can I order for huge parties?</span>
+               <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accrodion-content">
+               Yes, most pizza delivery websites offer options for large or party-sized orders. They often have special deals or packages specifically designed for catering to large groups or parties.
+            </p>
+         </div>
+   
+         <div class="accordion">
+            <div class="accordion-heading">
+               <span>how much protein it contains?</span>
+               <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accrodion-content">
+               The protein content of pizzas can vary depending on the crust, toppings, and cheese used. Some toppings like meat or chicken can contribute to the protein content. However, the specific protein content of a pizza will depend on the ingredients and their quantities
+            </p>
+         </div>
+   
+   
+         <div class="accordion">
+            <div class="accordion-heading">
+               <span>is it cooked with oil?</span>
+               <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accrodion-content">
+               Pizza dough is typically made with ingredients that include water, flour, yeast, salt, and sometimes oil. The use of oil in the dough helps to add flavor and texture to the crust. 
+            </p>
+         </div>
+   
+      </div>
+   
+   </section>
+   <script src="js/script.js"></script>
 
 
 </body>

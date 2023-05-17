@@ -604,10 +604,12 @@ section{
    max-width: 70rem;
    margin:0 auto;
 }
+
 .faq .accordion-container .accordion{
    margin:1.5rem 0;
    box-shadow: var(--box-shadow);
 }
+
 .faq .accordion-container .accordion .accordion-heading{
    padding:1.5rem;
    background: var(--black);
@@ -619,6 +621,7 @@ section{
    justify-content: space-between;
    gap:1.5rem;
 }
+
 .faq .accordion-container .accordion .accrodion-content{
    padding:2rem;
    background-color: var(--white);
@@ -627,12 +630,15 @@ section{
    font-size: 1.6rem;
    display: none;
 }
+
 .faq .accordion-container .accordion.active .accrodion-content{
    display: inline-block;
 }
+
 .faq .accordion-container .accordion.active .accordion-heading{
    background: var(--red);
 }
+
 .faq .accordion-container .accordion.active .accordion-heading i{
    transform: rotate(180deg);
 }

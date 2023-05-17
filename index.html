@@ -21,253 +21,253 @@
 <body>
     <!-- header section starts  -->
 
-<header class="header">
 
-   <section class="flex">
+    <header class="header">
 
-      <a href="#home" class="logo">Pizza.</a>
-
-      <nav class="navbar">
-         <a href="index.html">Home</a>
-         <a href="about.html">About</a>
-         <a href="Menu.html">Menu</a>
-         <a href="order.html">Order</a>
-         <a href="Faq.html">Faq</a>
-      </nav>
-
-      <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="user-btn" class="fas fa-user"></div>
-         <div id="order-btn" class="fas fa-box"></div>
-         <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
-      </div>
-
-   </section>
-
-</header>
-
-<!-- header section ends -->
-<div class="user-account">
-
-   <section>
-
-      <div id="close-account"><span>close</span></div>
-
-      <div class="user">
-         <p><span>you are not logged in now!</span></p>
-      </div>
-
-      <div class="display-orders">
-         <p>pizza-1 <span>( $3/- x 2 )</span></p>
-         <p>pizza 03 <span>( $2/- x 1 )</span></p>
-         <p>pizza 06 <span>( $4/- x 4 )</span></p>
-         <p>pizza 07 <span>( $2/- x 1 )</span></p>
-      </div>
-
-      <div class="flex">
-
-         <form action="" method="post">
-            <h3>login now</h3>
-            <table>
-               <tr >
-            <input type="email" name="email" id="mailId" required class="box" placeholder="enter your email" maxlength="50">
-           </tr>
-           <tr><td></td><td class="error" id="error2"></td></tr>
-            <tr><input type="password" name="pass" id="pass" pattern="^[A-Za-z0-9]{4,8}$" required class="box" placeholder="enter your password" maxlength="20"></tr>
-            <tr><td></td><td class="error" id="error3"></td></tr>
-         </table>
-            <input type="submit" value="login now" name="login" class="btn">
-         </form>
-
-         <form action="" method="post" id="regForm"  novalidate>
+      <section class="flex">
+   
+         <a href="#home" class="logo">Pizza.</a>
+   
+         <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="Faq.html">Faq</a>
+         </nav>
+   
+         <div class="icons">
             
-            <h3>register now</h3>
-            <table>
-          <tr>
-            <td><input type="text" id="firstName"  pattern="^[A-Za-z]*$"  name="name" required class="box" placeholder="enter your name" ></td>   
-            
-         </tr>
-        <tr><td class="error" id="error1"></td></tr>
-            <tr>
-                <td><input type="email" name="email" id="mailId" required class="box" placeholder="enter your email" maxlength="50"></td> 
-            
-         </tr>
-         <tr><td class="error" id="error2"></td></tr>
-            <tr>
-               <td> <input type="text" name="pass" id="pass" pattern="^[A-Za-z0-9]{4,8}$" required class="box" placeholder="enter your password"></td> 
-          
-         </tr>
-         <tr> <td class="error" id="error3"></td></tr>
-            <tr> 
-               <td><input type="password" name="cpass" id="cpass" required class="box" placeholder="confirm your password" > </td> 
-           </tr>
-            <tr> <td class="error" id="error4"></td></tr>
-            
-                   
-         </table>
-         <input type="submit" value="register now" name="register" class="btn">
-  
-         </form>
-
-
-      </div>
-
-   </section>
-
-</div>
-<div class="shopping-cart">
-
-   <section>
-
-      <div id="close-cart"><span>close</span></div>
-
-      <div class="box">
-         <a href="#" class="fas fa-times"></a>
-         <img src="images/pizza-1.jpg" alt="">
-         <div class="content">
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="order-btn" class="fas fa-box"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+         </div>
+   
+      </section>
+   
+   </header>
+   
+   <!-- header section ends -->
+   <div class="user-account">
+   
+      <section>
+   
+         <div id="close-account"><span>close</span></div>
+   
+         <div class="user">
+            <p><span>you are not logged in now!</span></p>
+         </div>
+   
+         <div class="display-orders">
             <p>pizza-1 <span>( $3/- x 2 )</span></p>
-            <form action="" method="post">
-               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
-               <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
+            <p>pizza 03 <span>( $2/- x 1 )</span></p>
+            <p>pizza 06 <span>( $4/- x 4 )</span></p>
+            <p>pizza 07 <span>( $2/- x 1 )</span></p>
          </div>
-      </div>
-
-      <div class="box">
-         <a href="#" class="fas fa-times"></a>
-         <img src="images/pizza-3.jpg" alt="">
-         <div class="content">
-            <p>pizza-3 <span>( $2/- x 1 )</span></p>
+   
+         <div class="flex">
+   
             <form action="" method="post">
-               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
-               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               <h3>login now</h3>
+               <table>
+                  <tr >
+               <input type="email" name="email" id="mailId" required class="box" placeholder="enter your email" maxlength="50">
+              </tr>
+              <tr><td></td><td class="error" id="error2"></td></tr>
+               <tr><input type="password" name="pass" id="pass" pattern="^[A-Za-z0-9]{4,8}$" required class="box" placeholder="enter your password" maxlength="20"></tr>
+               <tr><td></td><td class="error" id="error3"></td></tr>
+            </table>
+               <input type="submit" value="login now" name="login" class="btn">
             </form>
-         </div>
-      </div>
-
-      <div class="box">
-         <a href="#" class="fas fa-times"></a>
-         <img src="images/pizza-6.jpg" alt="">
-         <div class="content">
-            <p>pizza-6 <span>( $4/- x 2 )</span></p>
-            <form action="" method="post">
-               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
-               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+   
+            <form action="" method="post" id="regForm"  novalidate>
+               
+               <h3>register now</h3>
+               <table>
+             <tr>
+               <td><input type="text" id="firstName"  pattern="^[A-Za-z]*$"  name="name" required class="box" placeholder="enter your name" ></td>   
+               
+            </tr>
+           <tr><td class="error" id="error1"></td></tr>
+               <tr>
+                   <td><input type="email" name="email" id="mailId" required class="box" placeholder="enter your email" maxlength="50"></td> 
+               
+            </tr>
+            <tr><td class="error" id="error2"></td></tr>
+               <tr>
+                  <td> <input type="text" name="pass" id="pass" pattern="^[A-Za-z0-9]{4,8}$" required class="box" placeholder="enter your password"></td> 
+             
+            </tr>
+            <tr> <td class="error" id="error3"></td></tr>
+               <tr> 
+                  <td><input type="password" name="cpass" id="cpass" required class="box" placeholder="confirm your password" > </td> 
+              </tr>
+               <tr> <td class="error" id="error4"></td></tr>
+               
+                      
+            </table>
+            <input type="submit" value="register now" name="register" class="btn">
+     
             </form>
+   
+   
          </div>
-      </div>
-
-      <div class="box">
-         <a href="#" class="fas fa-times"></a>
-         <img src="images/pizza-7.jpg" alt="">
-         <div class="content">
-            <p>pizza-7 <span>( $2/- x 1 )</span></p>
-            <form action="" method="post">
-               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
-               <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
+   
+      </section>
+   
+   </div>
+   <div class="shopping-cart">
+   
+      <section>
+   
+         <div id="close-cart"><span>close</span></div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-1.jpg" alt="">
+            <div class="content">
+               <p>pizza-1 <span>( $3/- x 2 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
          </div>
-      </div>
-
-      <a href="#order" class="btn">order now</a>
-
-   </section>
-
-</div>
-<div class="my-orders">
-
-   <section>
-
-      <div id="close-orders"><span>close</span></div>
-
-      <h3 class="title"> my orders </h3>
-
-      <div class="box">
-         <p>placed on : <span>06/04/2022</span> </p>
-         <p>name : <span>shaikh anas</span> </p>
-         <p>number : <span>1234567890</span></p>
-         <p>address : <span>flat no. 123, bulding no. 2, jogeshwari, mumbai, india - 400104</span></p>
-         <p>payment method : <span>cash on delivery</span></p>
-         <p>your orders : <span>pizza 01 $3/- x 2, pizza 03 $2/- x 1, pizza 06 $4/- x 4, pizza 07, $2/- x 1</span></p>
-         <p>total price : <span>$11/-</span></p>
-         <p>payment status : <span style="color: var(--red);">pending</span> </p>
-      </div>
-
-      <div class="box">
-         <p>placed on : <span>06/04/2022</span> </p>
-         <p>name : <span>shaikh anas</span> </p>
-         <p>number : <span>1234567890</span></p>
-         <p>address : <span>flat no. 123, bulding no. 2, jogeshwari, mumbai, india - 400104</span></p>
-         <p>payment method : <span>cash on delivery</span></p>
-         <p>your orders : <span>pizza 01 $3/- x 2, pizza 03 $2/- x 1, pizza 06 $4/- x 4, pizza 07, $2/- x 1</span></p>
-         <p>total price : <span>$11/-</span></p>
-         <p>payment status : <span style="color: var(--red);">pending</span> </p>
-      </div>
-
-   </section>
-
-</div>
-
-<div class="shopping-cart">
-
-   <section>
-
-      <div id="close-cart"><span>close</span></div>
-
-      <div class="box">
-         <a href="#" class="fas fa-times"></a>
-         <img src="images/pizza-1.jpg" alt="">
-         <div class="content">
-            <p>pizza-1 <span>( $3/- x 2 )</span></p>
-            <form action="" method="post">
-               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
-               <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-3.jpg" alt="">
+            <div class="content">
+               <p>pizza-3 <span>( $2/- x 1 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
          </div>
-      </div>
-
-      <div class="box">
-         <a href="#" class="fas fa-times"></a>
-         <img src="images/pizza-3.jpg" alt="">
-         <div class="content">
-            <p>pizza-3 <span>( $2/- x 1 )</span></p>
-            <form action="" method="post">
-               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
-               <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-6.jpg" alt="">
+            <div class="content">
+               <p>pizza-6 <span>( $4/- x 2 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
          </div>
-      </div>
-
-      <div class="box">
-         <a href="#" class="fas fa-times"></a>
-         <img src="images/pizza-6.jpg" alt="">
-         <div class="content">
-            <p>pizza-6 <span>( $4/- x 2 )</span></p>
-            <form action="" method="post">
-               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
-               <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-7.jpg" alt="">
+            <div class="content">
+               <p>pizza-7 <span>( $2/- x 1 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
          </div>
-      </div>
-
-      <div class="box">
-         <a href="#" class="fas fa-times"></a>
-         <img src="images/pizza-7.jpg" alt="">
-         <div class="content">
-            <p>pizza-7 <span>( $2/- x 1 )</span></p>
-            <form action="" method="post">
-               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
-               <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
+   
+         <a href="#order" class="btn">order now</a>
+   
+      </section>
+   
+   </div>
+   <div class="my-orders">
+   
+      <section>
+   
+         <div id="close-orders"><span>close</span></div>
+   
+         <h3 class="title"> my orders </h3>
+   
+         <div class="box">
+            <p>placed on : <span>06/04/2022</span> </p>
+            <p>name : <span>shaikh anas</span> </p>
+            <p>number : <span>1234567890</span></p>
+            <p>address : <span>flat no. 123, bulding no. 2, jogeshwari, mumbai, india - 400104</span></p>
+            <p>payment method : <span>cash on delivery</span></p>
+            <p>your orders : <span>pizza 01 $3/- x 2, pizza 03 $2/- x 1, pizza 06 $4/- x 4, pizza 07, $2/- x 1</span></p>
+            <p>total price : <span>$11/-</span></p>
+            <p>payment status : <span style="color: var(--red);">pending</span> </p>
          </div>
-      </div>
-
-      <a href="order.html" class="btn">order now</a>
-
-   </section>
-
-</div>
-
+   
+         <div class="box">
+            <p>placed on : <span>06/04/2022</span> </p>
+            <p>name : <span>shaikh anas</span> </p>
+            <p>number : <span>1234567890</span></p>
+            <p>address : <span>flat no. 123, bulding no. 2, jogeshwari, mumbai, india - 400104</span></p>
+            <p>payment method : <span>cash on delivery</span></p>
+            <p>your orders : <span>pizza 01 $3/- x 2, pizza 03 $2/- x 1, pizza 06 $4/- x 4, pizza 07, $2/- x 1</span></p>
+            <p>total price : <span>$11/-</span></p>
+            <p>payment status : <span style="color: var(--red);">pending</span> </p>
+         </div>
+   
+      </section>
+   
+   </div>
+   
+   <div class="shopping-cart">
+   
+      <section>
+   
+         <div id="close-cart"><span>close</span></div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-1.jpg" alt="">
+            <div class="content">
+               <p>pizza-1 <span>( $3/- x 2 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-3.jpg" alt="">
+            <div class="content">
+               <p>pizza-3 <span>( $2/- x 1 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-6.jpg" alt="">
+            <div class="content">
+               <p>pizza-6 <span>( $4/- x 2 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+   
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-7.jpg" alt="">
+            <div class="content">
+               <p>pizza-7 <span>( $2/- x 1 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+   
+         <a href="order.html" class="btn">order now</a>
+   
+      </section>
+   
+   </div>
 
 
 <div class="home-bg">
